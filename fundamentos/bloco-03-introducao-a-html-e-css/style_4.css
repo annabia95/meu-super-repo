@@ -7,3 +7,10 @@
 .first_list .impar {
     text-transform: uppercase;
 }
+h1,h3 {
+    color: red;
+}
+.head {
+    font-size: 40px;
+    border: 1px solid black;
+}
