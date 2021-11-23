@@ -1,0 +1,9 @@
+.first_list {
+    background-color: yellow;
+}
+.first_list .par {
+    color: green;
+}
+.first_list .impar {
+    text-transform: uppercase;
+}
