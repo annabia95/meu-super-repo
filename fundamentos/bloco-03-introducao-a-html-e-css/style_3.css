@@ -4,3 +4,6 @@ h1,p {
 li:hover {
     background-color: aquamarine;
 }
+li:active {
+    font-family: monospace;
+}
