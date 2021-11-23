@@ -3,6 +3,7 @@ h1,p {
 }
 li:hover {
     background-color: aquamarine;
+    list-style: none;
 }
 li:active {
     font-family: monospace;
