@@ -1,5 +1,6 @@
 .first_list {
     background-color: yellow;
+    font-weight: bold;
 }
 .first_list .par {
     color: green;
@@ -13,4 +14,7 @@ h1,h3 {
 .head {
     font-size: 40px;
     border: 1px solid black;
+}
+li {
+    font-size: 20px;
 }
