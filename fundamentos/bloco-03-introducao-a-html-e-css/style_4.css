@@ -24,21 +24,22 @@ li {
 .second_list .pink {
     background-color: pink;
 }
-.sites {
+li .sites {
     font-weight: bold;
+    text-decoration: none;
 }
 .sites:hover .orange {
-    background-color: orange;
-}
+    color: orange;
+    }
 .sites:hover .green {
-    background-color: green;
+    color: green;
 }
 .sites:hover .black {
-    background-color: black;
+    color: black;
 }
 .sites:hover .yellow {
-    background-color: yellow;
+    color: yellow;
 }
 .sites:hover .green_trybe{
-    background-color: greenyellow;
+    color: greenyellow;
 }
