@@ -18,3 +18,9 @@ h1,h3 {
 li {
     font-size: 20px;
 }
+.second_list .blue {
+    color:blue;
+}
+.second_list .pink {
+    background-color: pink;
+}
