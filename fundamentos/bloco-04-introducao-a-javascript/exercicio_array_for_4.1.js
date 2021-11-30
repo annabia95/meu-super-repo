@@ -44,14 +44,23 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //console.log (maior);
 
 // Exercicio 6
-let impar = 0;
+//et impar = 0;
+//for (let index=0; index < numbers.length; index +=1) {
+//       if (numbers[index]%2 != 0) {
+//           impar +=1;
+//      }
+//}
+//if (impar === 0) {
+//    console.log ("nenhum valor impar encontrado");
+//} else {
+//    console.log (impar);
+//}
+
+// Exercicio 7
+let menor= numbers[0];
 for (let index=0; index < numbers.length; index +=1) {
-       if (numbers[index]%2 != 0) {
-           impar +=1;
-      }
+        if (numbers[index] < menor) {
+           menor = numbers[index];
+     }
 }
-if (impar === 0) {
-    console.log ("nenhum valor impar encontrado");
-} else {
-    console.log (impar);
-}
+console.log (menor);
