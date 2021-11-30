@@ -66,9 +66,16 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //console.log (menor);
 
 // Exercicio 8
+//let minhaArray= [];
+//for (let index=1; index <= 25; index +=1) {    
+//    minhaArray.push (index);
+//    }
+//console.log (minhaArray);
+
+// Exercicio 9
 let minhaArray= [];
-for (let index=1; index <= 26; index +=1) {
+for (let index=1; index <= 25; index +=1) {
     
-    minhaArray.push (index);
+    minhaArray.push (index/2);
     }
 console.log (minhaArray);
