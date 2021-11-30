@@ -44,7 +44,7 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //console.log (maior);
 
 // Exercicio 6
-//et impar = 0;
+//let impar = 0;
 //for (let index=0; index < numbers.length; index +=1) {
 //       if (numbers[index]%2 != 0) {
 //           impar +=1;
@@ -73,9 +73,26 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //console.log (minhaArray);
 
 // Exercicio 9
-let minhaArray= [];
-for (let index=1; index <= 25; index +=1) {
+//let minhaArray= [];
+//for (let index=1; index <= 25; index +=1) {
     
-    minhaArray.push (index/2);
+//    minhaArray.push (index/2);
+//    }
+//console.log (minha(Array);
+
+// Bonus 1
+//numbers.sort(function(a, b) {
+//  return a - b;
+//})
+//console.log (numbers);
+
+// Bonus 3
+let minhaArray= [];
+for (let index=0; index < numbers.length ; index +=1) {
+    if (index < numbers.length-1) {
+    minhaArray.push (numbers[index]*numbers[index+1]);
+    } else {
+      minhaArray.push (numbers[index]*2);
     }
+}
 console.log (minhaArray);
