@@ -14,6 +14,6 @@ let car = {
     manufacturer: 'Audi',
     year: 2020
   };
-for (let index in car){
+  for (let index in car){
     console.log ("Informações Gerais: " + index, car[index])
 }
