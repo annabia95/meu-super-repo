@@ -16,6 +16,15 @@
       second.innerText = 'Hoje cedo quando acordei...';
       const subtitle = document.getElementById("subtitle");
       subtitle.innerText = 'Olá!';
+      function criaClasse (){
+        subtitle.style.color = "green";
+        subtitle.classList = 'otherClass';
+        subtitle.innerText = 'Hoje vai dar bom!';
+        subtitle.classList.remove = otherClass;
+        
+      }
+      subtitle.addEventListener ('click', criaClasse)
+      
     </script>
   </body>
 </html>
