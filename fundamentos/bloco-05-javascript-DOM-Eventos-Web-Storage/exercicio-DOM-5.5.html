@@ -1,71 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício 5.2</title>
-    <style>
-      section {
-        border-color: black;
-        border-style: solid;
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
 
-      .title {
-        text-align: center;
-      }
+  <script>
+    const pai = document.getElementById('pai');
 
-      .main-content {
-        background-color: yellow;
+    for (let index = pai.childNodes.length - 1; index >= 0; index -= 1) {
+      const currentChildren = pai.childNodes[index];
+      if (currentChildren.id !== 'elementoOndeVoceEsta') {
+        currentChildren.remove();
       }
+    }
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .main-content .center-content p {
-        font-style: italic;
-      }
-
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
-
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
-
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
-
-      .main-content .description {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <script>
-      //Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body COLOQUE SEU CÓDIGO AQUI
-      let tagTexto = document.createElement ('h1');
-      tagTexto.innerText = 'Exercício 5.2 - JavaScript DOM';
-      body.appendChild(tagTexto);
-      //Adicione a tag main com a classe main-content como filho da tag body;
-      let tagMain = document.createElement ('main');
-      tagMain.className = 'main-content';
-      body.appendChild(tagMain);
-
-    </script>
-  </body>
+    const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
+  </script>
+</body>
 </html>
