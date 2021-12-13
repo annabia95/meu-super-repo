@@ -19,21 +19,26 @@
       <section id="quartoEUltimoFilho"></section>
     </section>
   </main>
+
+  <script>
+    let elementoOndeVoceEsta = document.getElementById ("elementoOndeVoceEsta");
+    console.log (elementoOndeVoceEsta);
+    
+    let paiElementoOndeVoceEsta = document.getElementById ("elementoOndeVoceEsta").parentElement;
+    console.log (paiElementoOndeVoceEsta);
+    paiElementoOndeVoceEsta.style.color = 'red';
+    
+    let primeiroFilhoDoFilho = elementoOndeVoceEsta.firstElementChild;
+    console.log (primeiroFilhoDoFilho);
+    paiElementoOndeVoceEsta.innerText = "Olá";
+    
+    let primeiroFilho = paiElementoOndeVoceEsta.firstElementChild;
+    console.log (primeiroFilho);
+    
+    let irmaoDeOndeVoceEsta = document.createElement ('section');
+    irmaoElementoOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta'
+    irmaoDeOndeVoceEsta.appendChild ('paiElementoOndeVoceEsta');
+    
+    </script>
 </body>
-<script>
-let elementoOndeVoceEsta = document.getElementById ("elementoOndeVoceEsta");
-console.log (elementoOndeVoceEsta);
-
-let paiElementoOndeVoceEsta = document.getElementById ("elementoOndeVoceEsta").parentElement;
-console.log (paiElementoOndeVoceEsta);
-paiElementoOndeVoceEsta.style.color = 'red';
-
-let primeiroFilhoDoFilho = elementoOndeVoceEsta.firstElementChild;
-console.log (primeiroFilhoDoFilho);
-paiElementoOndeVoceEsta.innerText = "Olá";
-
-let primeiroFilho = paiElementoOndeVoceEsta.firstElementChild;
-console.log (primeiroFilho);
-
-</script>
 </html>
