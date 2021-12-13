@@ -1,65 +1,39 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício 5.1</title>
-    
-    <style>
-      main, section {
-        border-color: black;
-        border-style: solid;
-      }
-
-      .title {
-        text-align: center;
-      }
-
-      .main-content {
-        background-color: yellow;
-      }
-
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin: 0 auto;
-      }
-
-      .main-content .center-content p {
-        font-style: italic;
-      }
-    </style>
-  </head>
-  <body>
-    <header> 
-      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
-    </header>    
-    <main class="main-content">
-      <section class="center-content">
-        <p>Texto padrão do nosso site</p>
-        <p>-----</p>
-        <p>Trybe</p>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
       </section>
-    </main>
-    <script>
-    let paragraph = document.getElementsByTagName ("p")[0];
-    paragraph.innerText = "Programando!";
-    let squareGreen = document.getElementsByClassName ("main-content")[0];
-    squareGreen.style.background = "rgb(76,164,109)";
-    let squareWhite = document.getElementsByClassName ("center-content")[0];
-    squareWhite.style.background = "white";
-    let correction = document.getElementsByTagName ("h1")[0];
-    correction.innerText = "Exercício 5.1 - JavaScript";
-    let paragraphAll = document.getElementsByTagName('p')[0];
-         paragraphAll.innerText = paragraphAll.innerText.toUpperCase();
-    function showParagraphs() {
-      let paragraphs = document.getElementsByTagName('p');
-      for (let index = 0; index < paragraphs.length; index += 1) {
-        console.log(paragraphs[index].innerText);
-      }
-    }
-    showParagraphs();
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+</body>
+<script>
+let elementoOndeVoceEsta = document.getElementById ("elementoOndeVoceEsta");
+console.log (elementoOndeVoceEsta);
 
-    </script>
-  </body>
+let paiElementoOndeVoceEsta = document.getElementById ("elementoOndeVoceEsta").parentElement;
+console.log (paiElementoOndeVoceEsta);
+paiElementoOndeVoceEsta.style.color = 'red';
+
+let primeiroFilhoDoFilho = elementoOndeVoceEsta.firstElementChild;
+console.log (primeiroFilhoDoFilho);
+paiElementoOndeVoceEsta.innerText = "Olá";
+
+let primeiroFilho = paiElementoOndeVoceEsta.firstElementChild;
+console.log (primeiroFilho);
+
+</script>
 </html>
