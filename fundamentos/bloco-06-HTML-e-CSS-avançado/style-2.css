@@ -1,50 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-    .form-header {
-    text-align:center;
-    font-size: large;
-    font-family:'Dancing Script', cursive;
-    background-image: url('http://corecon-es.org.br/wp-content/uploads/2019/09/business-woman-working-on-laptop-in-her-office-2210x1473.jpg');
-    background-repeat: no-repeat;
-	background-size: 100%;
-    background-position: center top 30%;
-  }
-  .speaker-form {
-    background-color: rgb(246, 247, 248);
-    border: 1px solid rgb(214, 217, 220);
-    border-radius: 3px;
-    width: 80%;
-    padding: 100px;
-    margin: 40px auto;
-  }
-  .fieldset-content {
-    padding: 5px;
-  }
-  .line-content input[type="text"] {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(214, 217, 220);
-    border-radius: 3px;
-    width: 100%;
-    padding: 7px;
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
+body {
+  max-width: 90%;
+  width: 100%;
+  margin: 30px auto;
+  background-color: aliceblue;
+}
+header, form {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 10px 5px 15px rgb(235, 231, 231);
+  font-family: 'Dancing Script';
+}
 
-  .line-content input[type="email"] {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(214, 217, 220);
-    border-radius: 3px;
-    width: 100%;
-    padding: 7px;
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
+form {
+  padding: 15px;
+}
 
-  .textarea-content {
-    width: 100%;
-    height: 60px;
-    resize: none; 
-  }
