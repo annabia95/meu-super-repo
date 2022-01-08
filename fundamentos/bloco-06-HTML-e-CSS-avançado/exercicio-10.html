@@ -5,50 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS FLEXBOX - ORDER</title>
     <style>
+    
       .container {
-        border: 1px solid black;
         display: flex;
-        height: 50px;
-        margin: auto;
-        width: 500px;
+        justify-content: center;
+        padding: 0;
+        border: 1px solid black;
+        margin: 0;
       }
 
       .box {
         align-items: center;
         display: flex;
         justify-content: center;
-        width: 125px;
+        height: 50px;
+        width: 200px;
+
       }
 
       .one {
         background-color: #FBD26A;
         display: flex;
-        /* Altere a propriedade order. */
-        order: 2;
+        /* Altere a propriedade grow. */
         list-style: none;
+        flex-basis: 30%
       }
 
       .two {
         background-color: #FAA488;
         display: flex;
-        /* Altere a propriedade order. */
-        order: 1;
+        /* Altere a propriedade grow. */
         list-style: none;
       }
 
       .three {
         background-color: #9069EF;
         display: flex;
-        /* Altere a propriedade order. */
-        order: 4;
+        /* Altere a propriedade grow. */
         list-style: none;
       }
 
       .four {
         background-color: #006472;
         display: flex;
-        /* Altere a propriedade order. */
-        order: 3;
+        /* Altere a propriedade grow. */
         list-style: none;
       }
 
@@ -59,8 +59,7 @@
       <li class="box one">1</li>
       <li class="box two">2</li>
       <li class="box three">3</li>
-    <li class="box four">4</li>
+      <li class="box four">4</li>
     </ul>
   </body>
-  
 </html>
