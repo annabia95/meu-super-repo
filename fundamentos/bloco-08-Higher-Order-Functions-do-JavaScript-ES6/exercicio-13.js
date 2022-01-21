@@ -73,8 +73,17 @@ console.log (formatedBookNames(books)); */
 /* 
 2 - Construa um array de objetos a partir do array de livros. Cada objeto deve conter uma propriedade author , com o nome da pessoa autora do livro, e uma propriedade age com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha considerando suas idades quando o livro foi lançado.
 Dica: use as funções map , sort */
-function nameAndAge() {
+/* function nameAndAge() {
     const arrayNameAge = books.map((book) => ({name:`${book.author.name}`, idade:`${book.releaseYear - book.author.birthYear}`})).sort((obj1, obj2) => obj1.idade - obj2.idade);
     return arrayNameAge;
     }
     console.log (nameAndAge(books));
+ */
+ /*    3 - Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia.
+    Dica: use a função filter ; */
+function fantasyOrScienceFiction() {
+    const myNewArray = books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
+return myNewArray;
+}
+
+console.log (fantasyOrScienceFiction(books));
