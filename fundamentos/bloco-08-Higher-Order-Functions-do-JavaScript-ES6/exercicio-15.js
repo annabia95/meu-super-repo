@@ -77,3 +77,5 @@ const multiply = (number, value = 2) => {
 };
 
 console.log(multiply(8));
+
+
