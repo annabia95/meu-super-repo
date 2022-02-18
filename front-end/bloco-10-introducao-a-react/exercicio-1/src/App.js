@@ -1,13 +1,19 @@
-// App.js
 import React from 'react';
 import './App.css';
 
-function App() {
+const Task = (value) => {
   return (
-    <div className='App'>
-      <h1>APP</h1>
-    </div>
+    <li key={value}>{value}</li>
   );
+}
+const tarefas = ['Acordar', 'Tomar café', 'Escovar os dentes', 'Ir trabalhar'];
+
+class App extends React.Component {
+  render() {
+    return (
+      <ul>{ tarefas.map(tarefa => Task(tarefa)) }</ul>
+    );
+  }
 }
 
 export default App;
