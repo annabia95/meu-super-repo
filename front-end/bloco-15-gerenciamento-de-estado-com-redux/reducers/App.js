@@ -1,5 +1,6 @@
 import { createStore } from 'redux'
-import combineReducers from './reducers/index'
+import combineReducers from './index'
+const Redux = require('redux');
 
 const store = createStore(combineReducers)
 console.log(store.getState())
