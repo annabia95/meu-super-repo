@@ -63,3 +63,7 @@ SELECT FIRST_NAME, HIRE_DATE FROM employees
 WHERE HIRE_DATE LIKE '1987-07%';
 
 SELECT FIRST_NAME, LAST_NAME, DATEDIFF(CURRENT_DATE(), HIRE_DATE) FROM employees;
+SELECT 	a.first_name, a.last_name, f.film_id
+FROM actor AS a
+INNER JOIN film_actor AS f
+ON a.actor_id = f.actor_id;
