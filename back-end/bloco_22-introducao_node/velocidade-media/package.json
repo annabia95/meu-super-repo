@@ -1,0 +1,15 @@
+{
+  "name": "velocidade-media",
+  "version": "1.0.0",
+  "description": "script para calcular a velocidade média de um carro numa corrida",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "velocidade": "node velocidade.js"
+  },
+  "author": "Anna Beatriz Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
