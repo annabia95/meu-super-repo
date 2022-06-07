@@ -1,0 +1,15 @@
+{
+  "name": "sorteio",
+  "version": "1.0.0",
+  "description": "\"jogo de adivinhação\" em que a pessoa ganha se acertar qual foi o número aleatório gerado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sorteio": "node sorteio.js"
+  },
+  "author": "Anna Beatriz",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
