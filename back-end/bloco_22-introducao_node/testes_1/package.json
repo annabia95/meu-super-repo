@@ -1,0 +1,16 @@
+{
+  "name": "testes_1",
+  "version": "1.0.0",
+  "description": "Fazendo uso de mocha e chai, estruturar os testes para uma função que vai dizer se um número é \"positivo\", \"negativo\" ou \"neutro\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "author": "Anna Beatriz Garcia",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.0"
+  }
+}
