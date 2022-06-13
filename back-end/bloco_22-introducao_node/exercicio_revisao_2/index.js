@@ -1,11 +1,15 @@
 const express = require('express');
 const api = express();
 
+const authMiddleware = require('./authMiddleware');
+
+const crypto = require('crypto');
+
 
 const { readFile, writeFile } = require('./database');
 
 api.use(express.json());
-
+api.use(authMiddleware);
 
 
 api.get('/simpsons', async(_req,res) => {
@@ -52,6 +56,23 @@ api.post('/simpsons', async (req, res) => {
 
   return res.status(204).end();
 });
+
+
+api.post('/signup', async(req,res) => {
+  try {
+    const { email, password, firstName, phone } = req.body;
+
+    if ([email, password, firstName, phone].includes(undefined)) {
+      return res.status(401).json({ message: 'missing fields' });
+    }
+
+    const token = crypto.randomBytes(8).toString('hex');
+
+    return res.status(200).json({ token });
+  } catch (error) {
+    return res.status(500).end();
+  }
+})
 
 
 api.get('/ping', (_req,res) => {
